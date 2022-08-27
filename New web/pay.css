@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'ChusaLove';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/ChusaLove.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    }
+    @font-face {
+        font-family: 'MYYeongnamnu';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'SANGJUGyeongcheonIsland';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @keyframes p1_ani {
+      from{
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 3;
+        transform: none;
+      }
+    }
+    @keyframes p2_ani {
+      from{
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 3;
+        transform: none;
+      }
+    }
+    @keyframes p3_ani {
+        from{
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 3;
+          transform: none;
+        }
+    }
+    @keyframes p4_ani {
+      from{
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 3;
+        transform: none;
+      }
+    }
+    @keyframes p5_ani {
+      from{
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 3;
+        transform: none;
+      }
+    }
+    @keyframes additional_ani {
+      50% {
+        opacity: 0;
+      }
+      from{
+       position: relative;
+       left: 0px;
+      }
+      to{
+       position: relative;
+       left: 0px;
+      }
+    }
+    
+    html{
+        scroll-behavior: smooth;
+      }
+      body{
+        overflow-x:hidden; overflow-y:auto;
+        margin: 0px 0px ;
+        background-color: #ebd4aa;
+        color : #333333;
+        font-family: 'SANGJUGyeongcheonIsland';
+      }
+      section{
+        height: 100%px;
+      }
+      .section,.section2{
+        border-left: 3px solid #333333;
+        border-right: 3px solid #333333;
+        text-align: center;
+        margin: 0px 18.4%;
+        background-color: #ebd4aa;
+      }
+      h1{
+        font-size: 32px;
+        margin: 0;
+        padding: 29px;
+      }
+      h2{
+        font-size: 32px;
+        margin: 0;
+        padding: 30px;
+      }
+      .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ed9c07;
+        padding: 5px 15px;
+        border-radius: 6px;
+      }
+      .navlogo{
+        font-size: 60px;
+        font-family: 'ChusaLove';
+      }
+      
+      a{
+        text-decoration: none;
+        color: #362a2a;
+      }
+      .navitems {
+      font-family: 'MYYeongnamnu';
+        display: flex;
+        list-style: none;
+        padding-left: 0px;
+        font-size: 25px;
+      }
+      .navitems li {
+        padding: 8px 60px;
+      
+      }
+      .navitems li:hover {
+        background-color:DeepSkyBlue;
+        border-radius: 6px;
+      }
+      .navbar_hambug{
+        position: absolute;
+        right: 32px;
+        top : 20px;
+        font-size: 32px;
+        display: none;
+      }
+      @media screen and (max-width:768px) {
+       .navbar{
+         flex-direction: column;
+         align-items: flex-start;
+       }
+       .navitems{
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         display: none;
+       }
+      .navitems li{
+        width: 100%;
+        text-align: center;
+        padding: 8px 12px;
+      }
+      .navicons {
+        text-align: center;
+        width: 100%;
+        display: none;
+      }
+      .navbar_hambug{
+        display: block;
+      }
+      
+      .navicons.active {
+        display: block;
+      }
+      .navitems.active {
+        display: flex;
+      }
+      }
+
+      .pricelist{
+        list-style: none;
+        font-size: 26px;
+        text-align: left;
+        line-height: 90px;
+        position: relative;
+      }
+      .p_1{
+        animation-name: p1_ani;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+      }     
+      .p_2{
+        transform: translateX(2000%);
+        animation-name: p2_ani;
+        animation-duration: 0.5s;
+        animation-delay: 0.3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        an
+       }
+      .p_3{
+        transform : translateX(1000%) ;
+        animation-name: p3_ani;
+        animation-duration: 0.5s;
+        animation-delay: 0.6s;
+        animation-fill-mode: forwards;
+        animation-timing-function : ease-in-out;
+      }
+      .p_4{
+        transform: translateX(1000%);
+        animation-name: p4_ani;
+        animation-duration: 0.5s;
+        animation-delay: 0.9s;
+        animation-fill-mode: forwards ;
+        animation-timing-function: ease-in-out;
+      }
+      .p_5{
+        transform: translateX(1000%);
+        animation-name: p5_ani;
+        animation-duration: 0.5s;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards ;
+        animation-timing-function: ease-in-out;
+      }
+      .multi{
+        position: relative;
+        left: 6000px;
+        font-size: 26px;
+        text-align: center;
+        margin: 0;
+        animation-name: additional_ani;
+        animation-duration: 1s;
+        animation-delay: 1.8s;
+        animation-fill-mode: forwards;
+        animation-timing-function: step-end;
+        animation-iteration-count: 3;
+      }
+      .additional{
+        padding-top: 10%;
+      }
+      .details{
+        list-style: none;
+        font-size: 26px;
+        line-height: 90px;
+        text-align: left;
+      }
+      .details_1,.details_2,.details_3{
+        margin: 5% 5%;
+      }
+      .logo_png{
+        float: inline-end;
+        margin-top: 20%;
+      }
+      .logo{
+        font-size: 60px;
+        font-family: 'ChusaLove';
+        margin-top: 1%;
+      }

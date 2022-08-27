@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'ChusaLove';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/ChusaLove.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    }
+    @font-face {
+        font-family: 'MYYeongnamnu';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'SANGJUGyeongcheonIsland';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @keyframes ani_1 {
+      from{
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 3;
+        transform: none;
+      }
+    }
+    @keyframes ani_2 {
+      from{
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 3;
+        transform: none;
+      }
+    }
+    @keyframes ani_3 {
+      from{
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 3;
+        transform: none;
+      }
+    }
+    @keyframes ani_4 {
+      from{
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 3;
+        transform: none;
+      }
+    }
+    html{
+        scroll-behavior: smooth;
+      }
+      body{
+        overflow-x:hidden; overflow-y:auto;
+        margin: 0px 0px ;
+        background-color: #ebd4aa;
+        color : #333333;
+        font-family: 'SANGJUGyeongcheonIsland';
+      }
+      section{
+        height: 100%;
+      }
+      .section{
+        border-left: 3px solid #333333;
+        border-right: 3px solid #333333;
+        text-align: center;
+        margin: 0px 18.4%;
+        background-color: #ebd4aa;
+      }
+      h1{
+        font-size: 30px;
+        margin: 0;
+        padding: 30px;
+      }
+      .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ed9c07;
+        padding: 5px 15px;
+        border-radius: 6px;
+      }
+      .navlogo{
+        font-size: 60px;
+        font-family: 'ChusaLove';
+      }
+      
+      a{
+        text-decoration: none;
+        color: #362a2a;
+      }
+      .navitems {
+      font-family: 'MYYeongnamnu';
+        display: flex;
+        list-style: none;
+        padding-left: 0px;
+        font-size: 25px;
+      }
+      .navitems li {
+        padding: 8px 60px;
+      
+      }
+      .navitems li:hover {
+        background-color:DeepSkyBlue;
+        border-radius: 6px;
+      }
+      .navbar_hambug{
+        position: absolute;
+        right: 32px;
+        top : 20px;
+        font-size: 32px;
+        display: none;
+      }
+      @media screen and (max-width:768px) {
+       .navbar{
+         flex-direction: column;
+         align-items: flex-start;
+       }
+       .navitems{
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         display: none;
+       }
+      .navitems li{
+        width: 100%;
+        text-align: center;
+        padding: 8px 12px;
+      }
+      .navicons {
+        text-align: center;
+        width: 100%;
+        display: none;
+      }
+      .navbar_hambug{
+        display: block;
+      }
+      
+      .navicons.active {
+        display: block;
+      }
+      .navitems.active {
+        display: flex;
+      }
+      }
+      .list{
+        list-style: none;
+        text-align: center;
+        font-size: 26px;
+        line-height: 50px;
+      }
+      .margin_top{
+       margin-top: 5%;
+      }
+      .ani_1{
+       transform: translateX(1000%);
+       animation-name: ani_1;
+       animation-duration: 0.5s;
+       animation-fill-mode: forwards;
+      }
+      .ani_2{
+       transform: translateX(1000%);
+       animation-name: ani_2;
+       animation-duration: 0.5s;
+       animation-delay: 0.3s;
+       animation-fill-mode: forwards;
+      }
+      .ani_3{
+       transform: translateX(1000%);
+       animation-name: ani_3;
+       animation-duration: 0.5s;
+       animation-delay: 0.6s;
+       animation-fill-mode: forwards;
+      }
+      .ani_4{
+       transform: translateX(1000%);
+       animation-name: ani_4;
+       animation-duration: 0.5s;
+       animation-delay: 0.9s;
+       animation-fill-mode: forwards;
+      }
+      .greeting_png{
+        margin-top: 10%;
+      }
+      .greeting{
+        margin-top: 5%;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .logo_png{
+        float: inline-end;
+        margin-top: 12%;
+      }
+      .logo{
+        font-size: 60px;
+        font-family: 'ChusaLove';
+        margin-top: 1%;
+      }
+    
